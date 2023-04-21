@@ -1,0 +1,114 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(11, 20, 65);
+    margin: 0 0;
+}
+
+h1 {
+    color: rgb(246, 246, 246);
+    font-family: 'Kanit', sans-serif;
+    margin: 0.5rem auto;
+}
+
+p {
+    color: rgb(2, 2, 2);
+}
+
+
+.title {
+    color: rgb(246, 246, 246);
+    margin: 1rem auto 1rem;
+    text-align: center;
+    color: "#fff6f6";
+    font-family: "DynaPuff";
+    text-align: center;
+    font-weight: 600;
+    font-size: 8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#buttons{
+    display: flex;
+    /* border: 2px solid yellow;*/
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.choice1 {
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 3rem;
+    width: 12rem;
+    text-align: center;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0); 
+    border: 5px solid rgb(234, 152, 0);  
+}
+
+.choice2 {
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 3rem;
+    width: 12rem;
+    text-align: center;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0); 
+    border: 5px solid rgb(31, 178, 232);  /* #1fb2e8 */
+
+}
+
+.choice1:hover {
+    background-color:  rgb(234, 152, 0);
+    transition: ease-in .3s;
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 3.2rem;
+    width: 13rem;
+    text-align: center;
+    color: rgb(0, 0, 0); 
+    border: 5px solid rgb(234, 152, 0);  
+}
+
+.choice2:hover {
+    background-color:  rgb(31, 178, 232);
+    transition: ease-in .3s;
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 3.2rem;
+    width: 13rem;
+    text-align: center;
+    color: rgb(0, 0, 0); 
+    border: 5px solid rgb(31, 178, 232);  
+}
+
+.inBreathe{
+    color: white;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 auto;
+    animation: pulse;
+}

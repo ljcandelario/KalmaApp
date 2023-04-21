@@ -1,0 +1,491 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #0b1441; /*#0b1441 Dark blue for background */
+    margin: 0 0;
+}
+
+h1 {
+    color: rgb(246, 246, 246);
+    font-family: 'Kanit', sans-serif;
+    margin: 0.5rem auto;
+}
+
+h3 {
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(246, 246, 246);
+  font-family: 'Kanit', sans-serif;
+}
+
+
+
+h4 {
+    margin: 0 0;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+}
+
+p {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+
+.title {
+    color: rgb(246, 246, 246);
+    text-align: center;
+    color: "#fff6f6";
+    font-family: "DynaPuff";
+    text-align: center;
+    font-weight: 600;
+    font-size: 6rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#breathContainer {
+    margin: 2rem auto;
+    text-align: center;
+    
+}
+
+.timerbox {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    display: flex;
+    position: relative;
+    text-align: center;
+    background-color: aliceblue;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    border: 5px solid rgb(234, 152, 0);
+    border-radius: 10px;
+    height: 3rem;
+    width: 9rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+   /* border: 5px solid rgb(174, 113, 1); */
+}
+
+#circleArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.circleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.largeCircle {
+    width: 12rem;
+    height: 12rem;
+    border: 10px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+}
+  
+.smallCircle {
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(224, 164, 13);
+  animation: grow-shrink 3s infinite alternate; 
+}
+  
+  @keyframes grow-shrink {
+    from {
+      transform: scale(0.2); /* start with the original size */
+    }
+    to {
+      transform: scale(1); /* end with half the size */
+    }
+  }
+
+.purpleCircle {
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  border-radius: 50%;
+  background-color:  #5d02d3; /* uneasy #b07def old*/; 
+  animation: grow-shrink 3s infinite alternate; 
+}
+
+.redCircle {
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  border-radius: 50%;
+  background-color:  #ff6200; /* uneasy new*/;
+  animation: grow-shrink 3s infinite alternate; 
+}
+
+.greyCircle {
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  border-radius: 50%;
+  background-color:  #717171; /* uneasy new*/;
+  animation: grow-shrink 3s infinite alternate; 
+}
+
+.orangeCircle {
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  border-radius: 50%;
+  background-color:  #f00d05; /* uneasy new*/;
+  animation: grow-shrink 3s infinite alternate; 
+}
+
+#choices {
+    display: flex;
+    /* border: 2px solid yellow;*/
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+#buttons, .startButton, .backButton {
+    display: flex;
+    /* border: 2px solid yellow;*/
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.uneasy /*uneasy, dark purple*/  {
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 4rem;
+    width: 12rem;
+    text-align: center;
+    padding-top: 1rem;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0); 
+    border: 5px solid #5d02d3;  
+    -webkit-filter: drop-shadow(0px 0px 5px #f9f6f6); /* colored shadow*/
+    filter: drop-shadow(0px 0px 5px #f4f4f4);
+}
+
+.uneasy:hover   {
+  background-color:  #5d02d3; /* #ea9800 Orange*/ /* #1fb2e8  Blue*/
+  transition: ease-in .3s;
+  cursor: pointer;
+  height: 4.2rem;
+  width: 12.5rem;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.stressed /*Stressed Red*/ {
+  font-size: 2rem;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  height: 4rem;
+  width: 12rem;
+  text-align: center;
+  padding-top: 1rem;
+  background-color: aliceblue;
+  color: rgb(0, 0, 0); 
+  border: 5px solid rgb(240, 13, 5);  
+  -webkit-filter: drop-shadow(0px 0px 5px #f9f6f6); /* colored shadow*/
+  filter: drop-shadow(0px 0px 5px #f4f4f4);
+}
+
+.stressed:hover{
+  background-color:  rgb(240, 13, 5);
+  transition: ease-in .3s;
+  cursor: pointer;
+  height: 4.2rem;
+  width: 12.5rem;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.anxious /*Anxious Grey */ {
+  font-size: 2rem;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  height: 4rem;
+  width: 12rem;
+  text-align: center;
+  padding-top: 1rem;
+  background-color: aliceblue;
+  color: rgb(0, 0, 0); 
+  border: 5px solid rgb(113, 113, 113);  
+  -webkit-filter: drop-shadow(0px 0px 5px #f9f6f6); /* colored shadow*/
+  filter: drop-shadow(0px 0px 5px #f4f4f4);
+}
+
+.anxious:hover {
+  background-color:  rgb(113, 113, 113);
+  transition: ease-in .3s;
+  cursor: pointer;
+  height: 4.2rem;
+  width: 12.5rem;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.burntOut /* Burnout Orange */ {
+  font-size: 2rem;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  height: 4rem;
+  width: 12rem;
+  padding-top: 1rem;
+  text-align: center;
+  background-color: aliceblue;
+  border: 5px solid rgb(255, 98, 0);  
+  -webkit-filter: drop-shadow(0px 0px 5px #f9f6f6); /* colored shadow*/
+  filter: drop-shadow(0px 0px 5px #f4f4f4);
+}
+
+.burntOut:hover {
+  background-color:  rgb(255, 98, 0);
+  transition: ease-in .3s;
+  cursor: pointer;
+  height: 4.2rem;
+  width: 12.5rem;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.startButton, .backButton {
+    font-size: 11.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 4rem;
+    width: 14rem;
+    text-align: center;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0); 
+    border: 5px solid rgb(234, 152, 0);  
+}
+
+.startButton:hover, .backButton:hover {
+    background-color:  rgb(234, 152, 0);
+    transition: ease-in .3s;
+    cursor: pointer;
+    height: 4.2rem;
+    width: 14.5rem;
+    font-size: 1.8rem;
+}
+
+.hideButtons {
+    transition: ease-out 2s;
+    transform: scale(0);
+}
+
+.hideBreath {
+    transition: ease-out 3s;
+    transform: scale(0);
+}
+
+.inBreathe{
+    color: white;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 auto;
+    animation: fade-in-out 3s infinite;
+}
+
+  /* fade-in-out animation */
+  @keyframes fade-in-out {
+    from {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  .breatheContainer {
+    color: white;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 auto;
+    transition:ease-in-out 2s;
+  }
+
+  .uneasyCard {
+    color:black;
+    background-color: #5100c4;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    
+    -webkit-filter: drop-shadow(0px 0px 5px #f9f6f6);  
+    filter: drop-shadow(0px 0px 5px #f4f4f4); 
+  }
+
+  .stressedCard {
+    color:black;
+    background-color: #ff6200;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-filter: drop-shadow(0px 0px 5px #f9f6f6);  
+    filter: drop-shadow(0px 0px 5px #f4f4f4); 
+  }
+
+  .anxiousCard {
+    color:black;
+    background-color: #717171;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-filter: drop-shadow(0px 0px 5px #f9f6f6);  
+    filter: drop-shadow(0px 0px 5px #f4f4f4); 
+  }
+
+  .burntOutCard {
+    color:black;
+    background-color: #f00d05;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-filter: drop-shadow(0px 0px 5px #f9f6f6);  
+    filter: drop-shadow(0px 0px 5px #f4f4f4); 
+  }
+
+  .uneasyCard p,
+  .stressedCard p,
+  .anxiousCard p,
+  .burntOutCard p{
+      margin: 0 auto;
+      text-align: center;
+      color: rgb(246, 246, 246);
+      font-family: 'Kanit', sans-serif;
+      font-size: 1rem;
+  }
+
+  .uneasyCard h3,
+  .stressedCard h3,
+  .anxiousCard h3,
+  .burntOutCard h3{
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(246, 246, 246);
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+}
+
+#choices {
+  display: flex;
+  /* border: 2px solid yellow;*/
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 1rem auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+}
+
+.choice1, .choice2, .choice3 {
+  font-size: 2rem;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  height: 4rem;
+  width: 12rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  background-color: aliceblue;
+  color: rgb(0, 0, 0); 
+  border: 5px solid rgb(234, 152, 0);  
+}
+
+.choice1:hover, .choice2:hover, .choice3:hover {
+  background-color:  rgb(234, 152, 0);
+  transition: ease-in .3s;
+  cursor: pointer;
+  height: 4.2rem;
+  width: 12.5rem;
+  font-size: 1.8rem;
+}
+
+/*
+  h3 {
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(246, 246, 246);
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  p {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  } */
+
+  .adviceContainer {
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    
+    /*-webkit-filter: drop-shadow(0px 0px 5px #f9f6f6);
+    filter: drop-shadow(0px 0px 5px #f4f4f4); */
+  }
+
+  section {
+    color: white; /* heading and logo*/
+    color: #ea9800; /* buttons- orange */
+    color:  #284fcf;  /* Messages */
+    color: #0b1441 ; /* background */
+    color: #75bde0; 
+    color:#3f0092; /* uneasy*/
+    color:#b07def; /* uneasy new*/
+    color:#ff6200; /* stressed*/
+    color: #717171; /* anxiety */
+    color: #f00d05; /* burnt out */
+  }

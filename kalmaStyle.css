@@ -1,0 +1,112 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(11, 20, 65);
+    margin: 0 0;
+}
+
+h1 {
+    color: rgb(246, 246, 246);
+    font-family: 'Kanit', sans-serif;
+    margin: 0.5rem auto;
+}
+
+p {
+    color: rgb(2, 2, 2);
+}
+
+
+#welcome {
+  color: rgb(246, 246, 246);
+  margin: 4rem auto 0 auto;
+  text-align: center;
+  color: "#fff6f6";
+  font-family: "DynaPuff";
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.title {
+    color: rgb(246, 246, 246);
+    margin: 0rem auto 1rem;
+    text-align: center;
+    color: "#fff6f6";
+    font-family: "DynaPuff";
+    text-align: center;
+    font-weight: 600;
+    font-size: 9rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.choice {
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.inBreathe{
+    position: relative;
+    color: #569fee;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 1rem auto 2rem auto; 
+    animation: fade-in-out 4s infinite;
+}
+
+  /* The keyframes for the fade-in-out animation */
+  @keyframes fade-in-out {
+    /* Start with opacity 0 */
+    from {
+      opacity: 0;
+    }
+    /* Fade in to opacity 1 at 50% */
+    50% {
+      opacity: 1;
+    }
+    /* Fade out to opacity 0 at the end */
+    to {
+      opacity: 0;
+    }
+  }
+.start {
+    font-size: 2.7rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    height: 100%;
+    width: 24rem;
+    text-align: center;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0); 
+    border: 5px solid rgb(234, 152, 0);  
+}
+
+.start:hover {
+    font-size: 3rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    height: 100%;
+    width: 25rem;
+    text-align: center;
+    background-color: rgb(234, 152, 0); 
+    color: rgb(0, 0, 0); 
+    border: 5px solid rgb(234, 152, 0);  
+    transition: ease-in .3s;
+    cursor: pointer;
+} 
+
