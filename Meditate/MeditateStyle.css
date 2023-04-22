@@ -28,9 +28,7 @@ p {
 .title {
     color: rgb(246, 246, 246);
     text-align: center;
-    color: "#fff6f6";
     font-family: "DynaPuff";
-    text-align: center;
     font-weight: 600;
     font-size: 6rem;
 }
@@ -41,13 +39,9 @@ a {
 }
 
 #breathContainer {
-    margin: 2rem auto;
+    margin: 2rem 2rem;
     text-align: center;
-    
 }
-
-
-
 
 .timerbox {
     color: rgb(0, 0, 0);
@@ -225,4 +219,30 @@ a {
     font-size: 3rem;
     margin: 0 auto;
     transition:ease-in-out 2s;
+  }
+
+  
+@media only screen and (max-width: 499px){ 
+
+    
+  .title {
+      font-weight: 600;
+      font-size: 6rem;
+  }
+    
+  .inBreathe{
+     font-size: 2rem;
+     margin: 0 1rem;
+  }
+  
+  #buttons {
+    width: 90%;
+    height: 22rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+  }
   }
