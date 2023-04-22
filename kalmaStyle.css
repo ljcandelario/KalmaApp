@@ -21,8 +21,6 @@ p {
 #welcome {
   color: rgb(246, 246, 246);
   margin: 4rem auto 0 auto;
-  text-align: center;
-  color: "#fff6f6";
   font-family: "DynaPuff";
   text-align: center;
   font-weight: 600;
@@ -32,8 +30,6 @@ p {
 .title {
     color: rgb(246, 246, 246);
     margin: 0rem auto 1rem;
-    text-align: center;
-    color: "#fff6f6";
     font-family: "DynaPuff";
     text-align: center;
     font-weight: 600;
@@ -110,3 +106,34 @@ a {
     cursor: pointer;
 } 
 
+@media only screen and (max-width: 499px){ 
+  #welcome {
+    
+    margin: 2rem auto 0 auto;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+  .title {
+      font-weight: 600;
+      font-size: 7rem;
+  }
+
+
+.inBreathe{
+  font-size: 2rem;
+}
+
+
+.start {
+  font-size: 1.7rem;
+  height: 100%;
+  width: 15rem;
+}
+
+.start:hover {
+  font-size: 1.9rem;
+  height: 100%;
+  width: 16rem;
+} 
+}
